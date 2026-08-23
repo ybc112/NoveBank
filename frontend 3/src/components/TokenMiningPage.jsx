@@ -162,6 +162,10 @@ export default function TokenMiningPage({
       toast.error(t('cz.node.referrerSelfWarn'));
       return;
     }
+    if (!hasReferrer && selectedReferrer === ZERO) {
+      toast.error(t('cz.node.referrerRequired'));
+      return;
+    }
     setIsStaking(true);
     try {
       const tx = await contracts.writeStakingBank.stake(ethers.parseEther(stakeAmount), selectedReferrer, feeTxOptions());
