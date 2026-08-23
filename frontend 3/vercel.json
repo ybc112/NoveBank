@@ -1,15 +1,14 @@
 {
   "build": {
     "env": {
-      "VITE_CHAIN_ID": "0x38",
-      "VITE_NBT_TOKEN": "0xD0F2A86C7EbCeE887F5bFB86771f994CD142bD04",
-      "VITE_STAKING_BANK": "0x903fcce5d67648FBE6Dccc9806e3bd7D303380fD",
+      "VITE_CHAIN_ID": "0x61",
+      "VITE_NBT_TOKEN": "0x713ee05217E6a8955D42744A7fFe235f263561Cb",
+      "VITE_STAKING_BANK": "0x79eEEa064949FBE2959A7300058D6B15421c0661",
       "VITE_NBT_PAIR": "",
       "VITE_FEE_TOKEN": ""
     }
   },
   "routes": [
-    { "src": "/api/(.*)", "dest": "http://36.151.145.15/cz-api/$1" },
     { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
