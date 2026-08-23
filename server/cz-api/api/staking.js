@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const { ethers } = require('ethers');
 
-const DEFAULT_STAKING_BANK = '0xA99A2b52eaEBA7219Fe5eBFe728A94F4e8536c46';
-const DEFAULT_CZ_TOKEN = '0xAE5aA8b20fd29f1CFbF94dcC221122f3ed36D75e';
+const DEFAULT_STAKING_BANK = '0x79eEEa064949FBE2959A7300058D6B15421c0661';
+const DEFAULT_CZ_TOKEN = '0x713ee05217E6a8955D42744A7fFe235f263561Cb';
 const DEFAULT_CHAIN_ID = 97;
 const DEFAULT_RPC_URLS = [
   'https://bsc-testnet.bnbchain.org',
